@@ -1,0 +1,25 @@
+// En la raiz de la carpeta contenedora, abrir cmd y escribir:
+1) npm init -y
+2) npm i expres
+3) node index  // para correr el servidor
+4) ctrl + c para bajar el servidor
+5) npm i -g nodemon  // en modo admin en consola. Sirve para hot-reload del proyecto
+6) nodemon index // para levantar el proyecto (dentro de la carpeta contenedora del  proyecto)
+
+// Para tomar los puertos dinámicamente
+
+1) npm i dotenv
+1) npm install socket.io
+
+// subir al github
+
+1) git init
+2) git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/srobayo/flutter-socket.io-server.git
+git push -u origin main
+
+git remote add origin https://github.com/srobayo/flutter-socket.io-server.git
+git branch -M main
+git push -u origin main
