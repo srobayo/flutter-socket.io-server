@@ -25,3 +25,28 @@
 
 // para crear ids
 npm i uuid
+
+// Para subir los cambios a git
+
+git add . //
+git commit -m "Cambios sobre bandas"
+git push
+git remote -v
+git tag
+git tag -a v1.5.0 -m "Band Socket Server"
+git push --tags
+
+// Para publicar en Heroku
+
+1) heroku login
+   -- se pone en la consola "del proyecto, en la raiz", se abre el navegador y se pone las credenciales
+
+2) heroku git:remote -a flutter-socket-server-master
+   --enter
+3) git push heroku master
+   -- sube todas las funetes a heroku
+
+
+
+
+
