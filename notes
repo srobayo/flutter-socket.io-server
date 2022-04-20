@@ -1,10 +1,13 @@
 // En la raiz de la carpeta contenedora, abrir cmd y escribir:
 1) npm init -y
-2) npm i expres
+2) npm i express
 3) node index  // para correr el servidor
 4) ctrl + c para bajar el servidor
 5) npm i -g nodemon  // en modo admin en consola. Sirve para hot-reload del proyecto
 6) nodemon index // para levantar el proyecto (dentro de la carpeta contenedora del  proyecto)
+// Segunda fase, instalaciones para el chat-server
+7)  npm i bcryptjs cors express-validator jsonwebtoken mongoose
+
 
 // Para tomar los puertos dinámicamente
 
@@ -38,15 +41,20 @@ git push --tags
 
 // Para publicar en Heroku
 
-1) heroku login
-   -- se pone en la consola "del proyecto, en la raiz", se abre el navegador y se pone las credenciales
+remove yarn.lock and npm.lock files
 
-2) heroku git:remote -a flutter-socket-server-master
-   --enter
-3) git push heroku master
-   -- sube todas las funetes a heroku
+heroku login
+git init
+git remote -v  // to see remote repos
+git add .
+git commit -am "custom message"
+git push heroku main
 
+// se han creado un nuevo tag en git 22/04/20, por lo que se debe ejecutar estas líneas cuando corresponda:
 
+git remote add origin https://github.com/srobayo/flutter-chat-backend.git
+git branch -M main
+git push -u origin main
 
 
 
