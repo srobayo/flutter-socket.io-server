@@ -19,7 +19,7 @@ const UserScheme = Schema({
 
   online: {
     type: Boolean,
-    required: false,
+    default: false,
   },
 });
 
